@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'accounts/style.css' %}">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">OPTICAL FLOW OF A VIDEO</h1>
+    <h3>Try your own video</h3>
+   
+  </div>
+</div>
+<form action="" enctype="multipart/form-data" style="text-align:left;" method="post">
+{% csrf_token %}
+   
+    <input type="file" value="Upload" name="video-opticalflow">
+    <input type="submit">
+</form>
+<p><strong>What is optical flow?</strong></p>
+<p>Optical flow is the pattern of apparent motion of image objects between two consecutive frames caused by the movemement of object or camera. It is 2D vector field where each vector is a displacement vector showing the movement of points from first frame to second.</p>
+
+</body>
+</html>
